@@ -1,15 +1,13 @@
 import React from "react";
 import "./Credits.css";
 import { credits } from "../Data/credits";
-import creditsTitleTop from "../Images/creditsTitleTop.png";
-import creditsTitleBottom from "../Images/creditsTitleBottom.png";
 
 const Credits = () => {
     return (
         <div className="section-staff-credits">
             <div className="credits-title">
-                <img src={creditsTitleTop} alt="Staff that made" className="title-line" />
-                <img src={creditsTitleBottom} alt="this possible" className="title-line" />
+                <img src="/creditsTitleTop.png" alt="Staff that made" className="title-line" />
+                <img src="/creditsTitleBottom.png" alt="this possible" className="title-line" />
             </div>
             <div className="credits-box">
                 <div className="credits-grid">
