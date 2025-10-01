@@ -1,18 +1,30 @@
-import styled from "styled-components";
-import SpecLogo from "../Images/spec_logo.png";
+import styled, { keyframes } from "styled-components";
 
+import SpecLogo from "../Images/spec_logo.png";
 import LGBTQHistoryMonth from "../Images/LGBTQransom_logo.png";
 import IlloPlaceholder from "../Images/illo_placeholder.png";
 
 import ButtonList from "./ButtonList";
 
-import YellowPinkSticker from "../Images/yellow_pink_spike.png";
+import YellowPinkSpikeSticker from "../Images/yellow_pink_spike.png";
+import VioletFlowerSticker from "../Images/violet_flower.png";
+import PinkSpikeSticker from "../Images/pink_spike.png";
+import PinkFlowerSticker from "../Images/pink_flower.png";
+import RedRainbowSticker from "../Images/red_rainbow.png";
 
 
 const Section = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: flex-start;    
+    overflow: hidden;
+`;
+
+const SectionBottom = styled.section`
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;    
+    overflow: hidden;
 `;
 
 const SpecLogoContainer = styled.div`
@@ -70,16 +82,89 @@ const LGBTQ = styled.img`
 `;
 
 
-const Spacer = styled.div`
+const Spacer1 = styled.div`
     height: 350px;
+`;
+
+
+const Rotate = keyframes`
+  0% {
+    transform: rotate(0turn);
+  }
+  50% {
+      transform: rotate(0.15turn);
+  }
+  100% {
+      transform: rotate(0turn);
+  }
+`;
+
+
+const Violet = styled.img`
+    position: absolute;
+    width: 35%;
+    height: auto;
+    margin-top: -5%;
+    z-index: 2;
+    animation: ${Rotate} 4s ease-in-out infinite alternate;
 `;
 
 const ButtonSection = styled.div`
     position: absolute;
-    padding-top: 50px;
+    padding-top: 4%;
     right: 59%;
-`;    
+    z-index: 75;
+`;
 
+const Spike = styled.img`
+    width: 13%;
+    display: flex;
+    position: absolute;
+    z-index: 51;
+    padding-top: 10%;
+    right: 0;
+`;
+
+
+const Spacer2 = styled.div`
+    height: 505px;
+`;
+
+const Pink = styled.img`
+    bottom: 0;
+    margin-top: -15%;
+    width: 32%;
+`;
+
+const RotateRainbow = keyframes`
+  0% {
+    transform: rotate(-15deg);
+  }
+  50% {
+      transform: rotate(15deg);
+  }
+  100% {
+      transform: rotate(-15deg);
+  }
+`;
+
+const RedWrapper = styled.div`
+    padding-top: 14%;
+    padding-left: 25%;
+    margin-bottom: -2%;
+    width: 30%;
+    z-index: 80;
+`;
+
+const Red = styled.img`
+    bottom: 0;
+    animation: ${RotateRainbow} 4s ease-in-out infinite alternate;
+    z-index: 80;
+    width: 90%;
+    left: 0;
+    padding-left: 50%;
+
+`;
 
 
 
@@ -90,7 +175,7 @@ export default function Header() {
         <SpecLogoContainer>
             <Logo src={SpecLogo} alt="Spectator Logo" />
         </SpecLogoContainer>
-        <CircleSpike src={YellowPinkSticker} alt="Yellow and Pink Spike Sticker" />
+        <CircleSpike src={YellowPinkSpikeSticker} alt="Yellow and Pink Spike Sticker" />
     </Section>
     <IllustrationContainer>
         <Illo src={IlloPlaceholder} alt="Illustration Placeholder" />
@@ -98,8 +183,21 @@ export default function Header() {
     <TitleLGBTQ>
         <LGBTQ src={LGBTQHistoryMonth} alt="LGBTQ+ History Month Logo" />
     </TitleLGBTQ>
-    <Spacer />
-    <ButtonSection> <ButtonList /></ButtonSection>
+    <Spacer1 />
+    <Section>
+        <Violet src={VioletFlowerSticker} alt="Violet Flower Sticker" />
+        <Spike src={PinkSpikeSticker} alt="Pink Spike Sticker" />
+    </Section>
+    <ButtonSection> 
+        <ButtonList />
+    </ButtonSection>
+    <Spacer2 />
+    <SectionBottom >
+        <Pink src={PinkFlowerSticker} alt="Pink Flower Sticker" />
+        <RedWrapper>
+            <Red src={RedRainbowSticker} alt="Red Rainbow Sticker" />
+        </RedWrapper>
+    </SectionBottom>
    
 
     </>
