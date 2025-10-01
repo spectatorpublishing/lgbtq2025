@@ -26,7 +26,7 @@ function Homepage() {
     
     <div>
       {isMobile ? <MobileHeader /> : <Header />}
-     {/*} <Credits /> */}
+      {/*} <Credits /> */}
     </div>
   );
 }
