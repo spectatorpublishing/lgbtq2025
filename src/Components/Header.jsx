@@ -1,8 +1,13 @@
 import styled from "styled-components";
 import SpecLogo from "../Images/spec_logo.png";
-import YellowPinkSticker from "../Images/yellow_pink_spike.png";
+
 import LGBTQHistoryMonth from "../Images/LGBTQransom_logo.png";
 import IlloPlaceholder from "../Images/illo_placeholder.png";
+
+import ButtonList from "./ButtonList";
+
+import YellowPinkSticker from "../Images/yellow_pink_spike.png";
+
 
 const Section = styled.section`
     display: flex;
@@ -65,7 +70,15 @@ const LGBTQ = styled.img`
 `;
 
 
+const Spacer = styled.div`
+    height: 350px;
+`;
 
+const ButtonSection = styled.div`
+    position: absolute;
+    padding-top: 50px;
+    right: 59%;
+`;    
 
 
 
@@ -85,6 +98,10 @@ export default function Header() {
     <TitleLGBTQ>
         <LGBTQ src={LGBTQHistoryMonth} alt="LGBTQ+ History Month Logo" />
     </TitleLGBTQ>
+    <Spacer />
+    <ButtonSection> <ButtonList /></ButtonSection>
+   
+
     </>
   );
 }
