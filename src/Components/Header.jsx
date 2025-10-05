@@ -1,16 +1,16 @@
 import styled, { keyframes } from "styled-components";
 
-import SpecLogo from "../Images/spec_logo.png";
-import LGBTQHistoryMonth from "../Images/LGBTQransom_logo.png";
-import IlloPlaceholder from "../Images/illo_placeholder.png";
+import SpecLogo from "../../public/spec_logo.png";
+import LGBTQHistoryMonth from "../../public/LGBTQransom_logo.png";
+import IlloPlaceholder from "../../public/illo_placeholder.png";
 
 import ButtonList from "./ButtonList";
 
-import YellowPinkSpikeSticker from "../Images/yellow_pink_spike.png";
-import VioletFlowerSticker from "../Images/violet_flower.png";
-import PinkSpikeSticker from "../Images/pink_spike.png";
-import PinkFlowerSticker from "../Images/pink_flower.png";
-import RedRainbowSticker from "../Images/red_rainbow.png";
+import YellowPinkSpikeSticker from "../../public/yellow_pink_spike.png";
+import VioletFlowerSticker from "../../public/violet_flower.png";
+import PinkSpikeSticker from "../../public/pink_spike.png";
+import PinkFlowerSticker from "../../public/pink_flower.png";
+import RedRainbowSticker from "../../public/red_rainbow.png";
 
 
 const Section = styled.section`
