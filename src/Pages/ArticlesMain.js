@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ArticlesMain.css";
+import articlesData from "../Data/articlesIndex";
 
 const sections = [
   { key: "university", label: "University", colorClass: "university" },
@@ -50,16 +51,27 @@ const ArticleMain = () => {
               />
             </div>
 
-            {/* MODIFY THIS SECTION AND ADD ARTICLES */}
-            {openSection === key && (
-              <div>
-                <ul>
-                  <li>{label} Article 1</li>
-                  <li>{label} Article 2</li>
-                  <li>{label} Article 3</li>
-                </ul>
-              </div>
-            )}
+          {openSection === key && (
+            <div className="articles-grid">
+              {articlesData[key] && articlesData[key].length > 0 ? (
+                articlesData[key].map((article) => (
+                  <div key={article.id} className="articles-box">
+                    <img
+                      src={article.image}
+                      alt={article.title}
+                      className="articles-box-img"
+                    />
+                    <div className="article-text">
+                      <h4 className="headline-text">{article.title}</h4>
+                      <p className="byline-text">by {article.author}</p>
+                    </div>
+                  </div>
+                ))
+              ) : (
+                <p>No articles available</p>
+              )}
+            </div>
+          )}
           </div>
         ))}
       </div>
