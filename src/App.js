@@ -1,9 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import ArticleMain from "./Pages/ArticlesMain";
 import Credits from "./Pages/Credits";
 import LetterFromEditor from "./Pages/LetterFromEditor";
+import Homepage from "./Pages/Homepage";
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
 function HomePage() {
   return (
     <>
+      <Homepage />
       <LetterFromEditor />
       <ArticleMain />
       <Credits />
