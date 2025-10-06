@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap');
+
 :root {
     background-color: #AFBFE0;
 }
@@ -49,6 +51,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   width: 80%;
+  position: relative;
 }
 
 .section-header {
@@ -56,17 +59,85 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  position: relative;
 }
 
 .drop-arrow {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
   transition: transform 0.3s ease;
   transform-origin: center;
 }
 
 .drop-arrow.rotated {
   transform: rotate(180deg);
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 3rem;
+  column-gap: 0.1rem;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.articles-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 9.8px;
+  border: 1.6px solid #3B0F46;
+  background: #F8EFFF;
+  box-shadow: 3.2px 6.5px 0 0 #3B0F46;
+  padding: 1rem;
+  width: 80%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.articles-box-img {
+  border-radius: 2.45px;
+  border: 3.27px solid #000;
+  max-width: 90%;
+  height: 55%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.headline-text {
+  color: #000;
+  font-family: "Josefin Sans";
+  font-size: 21.75px;
+  font-weight: 700;
+}
+
+.byline-text {
+  color: #000;
+  font-family: "Josefin Sans";
+  font-size: 21.75px;
+  font-weight: 300;
+}
+
+@media (max-width: 900px) {
+  .articles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .articles-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .university{
