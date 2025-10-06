@@ -1,17 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
-import SpecLogo from "../../public/spec_logo.png";
-import LGBTQHistoryMonth from "../../public/LGBTQransom_logo.png";
-import IlloPlaceholder from "../../public/illo_placeholder.png";
-
 import ButtonList from "./ButtonList";
-
-import YellowPinkSpikeSticker from "../../public/yellow_pink_spike.png";
-import VioletFlowerSticker from "../../public/violet_flower.png";
-import PinkSpikeSticker from "../../public/pink_spike.png";
-import PinkFlowerSticker from "../../public/pink_flower.png";
-import RedRainbowSticker from "../../public/red_rainbow.png";
-
 
 const Section = styled.section`
     display: flex;
@@ -173,29 +162,29 @@ export default function Header() {
     <>
     <Section>
         <SpecLogoContainer>
-            <Logo src={SpecLogo} alt="Spectator Logo" />
+            <Logo src={"spec_logo.png"} alt="Spectator Logo" />
         </SpecLogoContainer>
-        <CircleSpike src={YellowPinkSpikeSticker} alt="Yellow and Pink Spike Sticker" />
+        <CircleSpike src={"yellow_pink_spike.png"} alt="Yellow and Pink Spike Sticker" />
     </Section>
     <IllustrationContainer>
-        <Illo src={IlloPlaceholder} alt="Illustration Placeholder" />
+        <Illo src={"illo_placeholder.png"} alt="Illustration Placeholder" />
     </IllustrationContainer>
     <TitleLGBTQ>
-        <LGBTQ src={LGBTQHistoryMonth} alt="LGBTQ+ History Month Logo" />
+        <LGBTQ src={"LGBTQransom_logo.png"} alt="LGBTQ+ History Month Logo" />
     </TitleLGBTQ>
     <Spacer1 />
     <Section>
-        <Violet src={VioletFlowerSticker} alt="Violet Flower Sticker" />
-        <Spike src={PinkSpikeSticker} alt="Pink Spike Sticker" />
+        <Violet src={"violet_flower.png"} alt="Violet Flower Sticker" />
+        <Spike src={"pink_spike.png"} alt="Pink Spike Sticker" />
     </Section>
     <ButtonSection> 
         <ButtonList />
     </ButtonSection>
     <Spacer2 />
     <SectionBottom >
-        <Pink src={PinkFlowerSticker} alt="Pink Flower Sticker" />
+        <Pink src={"pink_flower.png"} alt="Pink Flower Sticker" />
         <RedWrapper>
-            <Red src={RedRainbowSticker} alt="Red Rainbow Sticker" />
+            <Red src={"red_rainbow.png"} alt="Red Rainbow Sticker" />
         </RedWrapper>
     </SectionBottom>
    
