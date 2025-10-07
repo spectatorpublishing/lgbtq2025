@@ -5,7 +5,7 @@ import styled from "styled-components";
 import Article from "../Components/Article";
 
 const Section = styled.section`
-  background-color: #AFBFE0;
+  background-color: #afbfe0;
 `;
 
 const sections = [
@@ -42,6 +42,7 @@ const ArticleMain = () => {
           {sections.map(({ key, label, colorClass }) => (
             <div
               key={key}
+              id={key} 
               className={`section-box ${colorClass} ${
                 openSection === key ? "expanded" : ""
               }`}
@@ -58,34 +59,23 @@ const ArticleMain = () => {
                 />
               </div>
 
-            {openSection === key && (
-              <div className="articles-grid">
-                {articlesData[key] && articlesData[key].length > 0 ? (
-                  articlesData[key].map((article) => (
-                    // <div key={article.id} className="articles-box">
-                    //   <img
-                    //     src={article.image}
-                    //     alt={article.title}
-                    //     className="articles-box-img"
-                    //   />
-                    //   <div className="article-text">
-                    //     <h4 className="headline-text">{article.title}</h4>
-                    //     <p className="byline-text">by {article.author}</p>
-                    //   </div>
-                    // </div>
-                    <Article
-                     key={article.id}
-                     article_link={article.url || "#"}
-                     image={article.image}
-                     title={article.title}
-                     authors={article.author ? [article.author] : []}
-                     />
-                  ))
-                ) : (
-                  <p>No articles available</p>
-                )}
-              </div>
-            )}
+              {openSection === key && (
+                <div className="articles-grid">
+                  {articlesData[key] && articlesData[key].length > 0 ? (
+                    articlesData[key].map((article) => (
+                      <Article
+                        key={article.id}
+                        article_link={article.url || "#"}
+                        image={article.image}
+                        title={article.title}
+                        authors={article.author ? [article.author] : []}
+                      />
+                    ))
+                  ) : (
+                    <p>No articles available</p>
+                  )}
+                </div>
+              )}
             </div>
           ))}
         </div>
@@ -95,4 +85,3 @@ const ArticleMain = () => {
 };
 
 export default ArticleMain;
-
