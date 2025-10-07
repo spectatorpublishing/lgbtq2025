@@ -24,93 +24,90 @@ const HomepageButtons = ({ children, onClick }) => {
 
     };
 
-    // We use state to handle the temporary hover/active states
-    const [isHovered, setIsHovered] = useState(false);
-    const [isActive, setIsActive] = useState(false);
-    
-    let currentStyle = {...buttonStyle};
+  const [isHovered, setIsHovered] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
-    // Apply temporary hover/active states (reverts when interaction ends)
-    if (isHovered) {
-        currentStyle = {
-            ...currentStyle,
-            fontStyle: 'italic',
-            color: '#9169f5',
-        };
-    }
-    
-    if (isActive) {
-        currentStyle = {
-            ...currentStyle,
-            transform: 'translateY(1px)',
-        };
-    }
+  let currentStyle = { ...buttonStyle };
 
-    const handleMouseLeave = () => {
-        setIsHovered(false);
-        setIsActive(false);
+  if (isHovered) {
+    currentStyle = {
+      ...currentStyle,
+      fontStyle: "italic",
+      color: "#9169f5",
     };
+  }
 
+  if (isActive) {
+    currentStyle = {
+      ...currentStyle,
+      transform: "translateY(1px)",
+    };
+  }
 
-    return (
-        <button 
-            style={currentStyle} 
-            onClick={onClick}
-            onMouseEnter={() => setIsHovered(true)} // Set hovered state
-            onMouseLeave={handleMouseLeave} // Revert on mouse leave
-            onMouseDown={() => setIsActive(true)}
-            onMouseUp={() => setIsActive(false)}
-        >
-            {children}
-        </button>
-    );
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+    setIsActive(false);
+  };
+
+  return (
+    <button
+      style={currentStyle}
+      onClick={onClick}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={handleMouseLeave}
+      onMouseDown={() => setIsActive(true)}
+      onMouseUp={() => setIsActive(false)}
+    >
+      {children}
+    </button>
+  );
 };
 
-/**
- * Renders the stack of navigation buttons.
- */
 const ButtonList = () => {
-    const [setLastClicked] = useState('');
+  const [, setLastClicked] = useState("");
 
-    const handleButtonClick = (section) => {
-        setLastClicked(section);
-        console.log(`Mapsd to: ${section}`);
-    };
+  const buttonItems = [
+    { label: "UNIVERSITY", key: "university" },
+    { label: "CITY", key: "city" },
+    { label: "SPORTS", key: "sports" },
+    { label: "ARTS & CULTURE", key: "artsCulture" },
+    { label: "OPINION", key: "opinion" },
+    { label: "SPECTRUM", key: "spectrum" },
+    { label: "VIDEO", key: "video" },
+    { label: "AUDIO", key: "audio" },
+    { label: "CROSSWORDS", key: "crosswords" },
+  ];
 
-    const buttonItems = [
-        'UNIVERSITY', 
-        'SECTION', 
-        'UNIVERSITY', 
-        'UNIVERSITY', 
-        'UNIVERSITY', 
-        'UNIVERSITY'
-    ];
+  const handleButtonClick = (sectionKey) => {
+    setLastClicked(sectionKey);
 
-    const containerStyle = {
-        width: "80%", 
-        maxWidth: "350px",
-        height: "auto",
-        display: "flex",
-        flexDirection: "column",
-        flexWrap: "wrap",
-        alignItems: "flex-end",
-        gap: "15px",
-    };
+    const targetElement = document.getElementById(sectionKey);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+      console.log(`Scrolled to: ${sectionKey}`);
+    } else {
+      console.warn(`No section found for key: ${sectionKey}`);
+    }
+  };
 
+  const containerStyle = {
+    width: "80%",
+    maxWidth: "350px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-end",
+    gap: "15px",
+  };
 
-    return (
-        // Replaced styled.div with a standard div and class/style attributes
-        <div style={containerStyle}>
-            {buttonItems.map((text) => (
-                <HomepageButtons 
-                    key={text} 
-                    onClick={() => handleButtonClick(text)}
-                >
-                    {text}
-                </HomepageButtons>
-            ))}
-        </div>
-    );
+  return (
+    <div style={containerStyle}>
+      {buttonItems.map(({ label, key }) => (
+        <HomepageButtons key={key} onClick={() => handleButtonClick(key)}>
+          {label}
+        </HomepageButtons>
+      ))}
+    </div>
+  );
 };
 
 export default ButtonList;
