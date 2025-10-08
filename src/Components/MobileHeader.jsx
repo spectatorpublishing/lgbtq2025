@@ -93,6 +93,21 @@ const Red = styled.img`
     padding-bottom: 18%;
     right: 5%;
 
+
+    @media (min-height: 800px) and (min-width: 600px){
+    
+        top: 1000px;
+        }
+
+    @media (min-height: 500px) and (min-width: 700px){
+    
+        top: 1100px;
+    }
+
+    @media (width: 375px) {
+        top: 600px;
+    }
+
 `;
 
 
