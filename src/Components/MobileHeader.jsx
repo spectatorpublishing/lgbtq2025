@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 
 import SpecLogo from "../../public/spec_logo.png";
-import LGBTQHistoryMonth from "../../publicLGBTQransom_logo.png";
+import LGBTQHistoryMonth from "../../public/LGBTQransom_logo.png";
 import IlloPlaceholder from "../../public/illo_placeholder.png";
 
 import YellowPinkSpikeSticker from "../../public/yellow_pink_spike.png";
