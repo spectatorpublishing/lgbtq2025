@@ -1,17 +1,4 @@
-import styled, { keyframes } from "styled-components";
-
-import SpecLogo from "../../public/spec_logo.png";
-import LGBTQHistoryMonth from "../../public/LGBTQransom_logo.png";
-import IlloPlaceholder from "../../public/illo_placeholder.png";
-
-import YellowPinkSpikeSticker from "../../public/yellow_pink_spike.png";
-import VioletFlowerSticker from "../../public/violet_flower.png";
-import PinkSpikeSticker from "../../public/pink_spike.png";
-import PinkFlowerSticker from "../../public/whole_pink_flower.png";
-import RedRainbowSticker from "../../public/red_rainbow.png";
-
-
-
+import styled from "styled-components";
 
 const SpecLogoContainer = styled.div`
   padding: 15px;
@@ -29,8 +16,6 @@ const HeaderLGBTQ = styled.section`
     justify-content: center;
     overflow: hidden;
 `;
-
-
 
 const LGBTQ = styled.img`
     position: absolute;
@@ -111,25 +96,24 @@ const Red = styled.img`
 `;
 
 
-
 export default function Header() {
   return (
     <>
     <SpecLogoContainer>
-        <Logo src={SpecLogo} alt="Spectator Logo" />
+        <Logo src={"spec_logo.png"} alt="Spectator Logo" />
     </SpecLogoContainer>
 
     <HeaderLGBTQ>  
-        <LGBTQ src={LGBTQHistoryMonth} alt="LGBTQ+ History Month Logo" /> 
-        <Illo src={IlloPlaceholder} alt="Illustration Placeholder" />
+        <LGBTQ src={"publicLGBTQransom_logo.png"} alt="LGBTQ+ History Month Logo" /> 
+        <Illo src={"illo_placeholder.png"} alt="Illustration Placeholder" />
     </HeaderLGBTQ>
     <Spacer />
 
-    <CircleSpike src={YellowPinkSpikeSticker} alt="Yellow and Pink Spike Sticker" />   
-    <Violet src={VioletFlowerSticker} alt="Violet Flower Sticker" />
-    <Spike src={PinkSpikeSticker} alt="Pink Spike Sticker" />
-    <Pink src={PinkFlowerSticker} alt="Pink Flower Sticker" />
-    <Red src={RedRainbowSticker} alt="Red Rainbow Sticker" />
+    <CircleSpike src={"yellow_pink_spike.png"} alt="Yellow and Pink Spike Sticker" />   
+    <Violet src={"violet_flower.png"} alt="Violet Flower Sticker" />
+    <Spike src={"pink_spike.png"} alt="Pink Spike Sticker" />
+    <Pink src={"whole_pink_flower.png"} alt="Pink Flower Sticker" />
+    <Red src={"red_rainbow.png"} alt="Red Rainbow Sticker" />
    
 
     </>
