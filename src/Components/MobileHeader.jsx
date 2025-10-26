@@ -104,8 +104,8 @@ export default function Header() {
     </SpecLogoContainer>
 
     <HeaderLGBTQ>  
-        <LGBTQ src={"publicLGBTQransom_logo.png"} alt="LGBTQ+ History Month Logo" /> 
-        <Illo src={"illo_placeholder.png"} alt="Illustration Placeholder" />
+        <LGBTQ src={"LGBTQransom_logo.png"} alt="LGBTQ+ History Month Logo" /> 
+        <Illo src={"graphic.png"} alt="Illustration Placeholder" />
     </HeaderLGBTQ>
     <Spacer />
 

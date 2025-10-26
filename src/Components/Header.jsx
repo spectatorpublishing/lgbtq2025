@@ -33,12 +33,11 @@ const CircleSpike = styled.img`
     z-index: 51;
 `;
 
-
-
-
 const IllustrationContainer = styled.div`
     display: flex;
     justify-content: right;
+    max-width: 100%;
+    height: auto;
 `;
 
 const Illo = styled.img`
@@ -167,7 +166,7 @@ export default function Header() {
         <CircleSpike src={"yellow_pink_spike.png"} alt="Yellow and Pink Spike Sticker" />
     </Section>
     <IllustrationContainer>
-        <Illo src={"illo_placeholder.png"} alt="Illustration Placeholder" />
+        <Illo src={"graphic.png"} alt="Illustration Placeholder" />
     </IllustrationContainer>
     <TitleLGBTQ>
         <LGBTQ src={"LGBTQransom_logo.png"} alt="LGBTQ+ History Month Logo" />
@@ -192,3 +191,4 @@ export default function Header() {
     </>
   );
 }
+
