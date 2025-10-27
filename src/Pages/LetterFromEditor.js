@@ -196,43 +196,29 @@ export default function LetterPage() {
           <LipsImage src="lips.png" alt="lips"/> 
           <RainbowImage src="rainbow.png" alt="rainbow"/>  
 
-          <div>Dear readers</div>
-          <br />
-          <div>
-          !!PLACEHOLDER October is LGBTQ History Month, a time to celebrate queerness in 
-          all its forms and the contributions queer people have made to our world. Columbia
-           itself has been the site of much of this history, and this special edition is 
-           intended to highlight the ways lesbian, gay, bisexual, transgender, and queer 
-           Columbians have played integral roles in shaping our community, both in the past 
-           and today.
-          </div>
-          <br />
-          <div>
-          !!PLACEHOLDER In this edition, we explore how professor Jack Halberstam has transformed
-            the study of gender and sexuality at Columbia. We dive into the difficult decisions trans
-            athletes must make and look into the communities queer and trans student-athletes find
-            within club sports. We take a tour through the businesses in West Harlem supporting the
-            queer community and interrogate the lack of lesbian bars, both in New York City and
-            nationwide.
-          </div>
-          <br />
-          <div>
-          !!PLACEHOLDER We hope this edition leaves you with a deeper understanding of the
-            contributions of queer Columbians and community members to our school, neighborhood, and
-            beyond. We are excited to celebrate queer history, voices, stories, and lives—this month,
-            and all year round.
-          </div>
-          <br />
-          <div>All the very best,</div>
+          <div>Dear readers,</div>
+            <br />
+            <div>
+            October is LGBTQ History Month, when we celebrate the legacy and contributions of lesbian, gay, bisexual, transgender, and queer Columbians and West Harlemites throughout history. This special edition, written and produced by Spectator staff, seeks to highlight this history and explore the various ways in which Columbia, West Harlem, and Morningside Heights have long played host to LGBTQ history.
+            </div>
+            <br />
+            <div>
+            In this edition, we explore how Columbia professors shine light on queer interpretations of ancient texts. Our writers explore the work of Columbia’s chapter of Athlete Ally, an organization fighting to champion LGBTQ participation in sports. We also take a visit to the home of the legendary Billy Strayhorn, and how he fostered a space for the LGBTQ community. And, we explore how federal funding cuts have disproportionately affected research related to LGBTQ issues.
+            </div>
+            <br />
+            <div>
+            This LGBTQ History Month, we hope our special edition leaves you with new knowledge and understanding of LGBTQ history at Columbia and in West Harlem. This month, and every month, Spectator is honored to celebrate LGBTQ voices on our campus and beyond.
+            </div>
+            <br />
         
           <SignatureContainer>
             <SignatureItem>
-              <Signature>Firstname Lastname</Signature>
+              <Signature>Shea Vance</Signature>
               <div>Editor In Chief</div>
             </SignatureItem>
         
             <SignatureItem>
-              <Signature>Firstname Lastname</Signature>
+              <Signature>Heather Chen</Signature>
               <div>Managing Editor</div>
             </SignatureItem>
           </SignatureContainer>
