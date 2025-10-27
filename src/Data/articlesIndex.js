@@ -5,7 +5,6 @@ import artsCulture from "./acArticles";
 import opinion from "./opinionArticles";
 import spectrum from "./spectrumArticles";
 import video from "./videoArticles";
-import audio from "./audioArticles";
 import crosswords from "./crosswordsArticles";
 
 const articlesData = {
@@ -16,7 +15,6 @@ const articlesData = {
   opinion,
   spectrum,
   video,
-  audio,
   crosswords
 };
 
