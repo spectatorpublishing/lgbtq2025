@@ -1,22 +1,10 @@
 const video = [
   {
-    article_link: "https://www.google.com",
-    image: "https://www.columbiaspectator.com/resizer/v2/ZUZQZCGHNZH3RFH3UH5WZ5L52A.jpg?auth=5c33659e2f701ae51725630720238b0953e50f0b13dbbecc3ab9f4ae8bcafbf7",
-    title: "TITLE PLACEHOLDER",
-    authors: ["AUTHOR PLACEHOLDER"],
+    article_link: "https://youtu.be/m9YEoKP_kL8",
+    image: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/UKG752WOLNAGRG2S7KESHQOMZY//resizer/v2/UKG752WOLNAGRG2S7KESHQOMZY.jpg?auth=3ca62fcc2fd5189e548c0f6ace2a74d17ff9e6060cccf421cde79350df47fddc",
+    title: "Analyzing queer themes and diversity in the Core with Literature Humanities lecturer Tamara Hache",
+    authors: ["Liz Backus", "Tulasi Cherukuri", "Mathilda Turich", "Elliot Heath"],
   },
-  {
-    article_link: "https://www.google.com",
-    image: "https://www.columbiaspectator.com/resizer/v2/ZUZQZCGHNZH3RFH3UH5WZ5L52A.jpg?auth=5c33659e2f701ae51725630720238b0953e50f0b13dbbecc3ab9f4ae8bcafbf7",
-    title: "TITLE PLACEHOLDER",
-    authors: ["AUTHOR PLACEHOLDER"],
-  },
-  {
-    article_link: "https://www.google.com",
-    image: "https://www.columbiaspectator.com/resizer/v2/ZUZQZCGHNZH3RFH3UH5WZ5L52A.jpg?auth=5c33659e2f701ae51725630720238b0953e50f0b13dbbecc3ab9f4ae8bcafbf7",
-    title: "TITLE PLACEHOLDER",
-    authors: ["AUTHOR PLACEHOLDER"],
-  }
 ];
 
 export default video;

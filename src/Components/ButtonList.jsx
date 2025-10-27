@@ -71,10 +71,8 @@ const ButtonList = () => {
     { label: "CITY", key: "city" },
     { label: "SPORTS", key: "sports" },
     { label: "ARTS & CULTURE", key: "artsCulture" },
-    { label: "OPINION", key: "opinion" },
     { label: "SPECTRUM", key: "spectrum" },
     { label: "VIDEO", key: "video" },
-    { label: "AUDIO", key: "audio" },
     { label: "CROSSWORDS", key: "crosswords" },
   ];
 

@@ -13,10 +13,8 @@ const sections = [
   { key: "city", label: "City", colorClass: "city" },
   { key: "sports", label: "Sports", colorClass: "sports" },
   { key: "artsCulture", label: "Arts & Culture", colorClass: "artsCulture" },
-  { key: "opinion", label: "Opinion", colorClass: "opinion" },
   { key: "spectrum", label: "Spectrum", colorClass: "spectrum" },
   { key: "video", label: "Video", colorClass: "video" },
-  { key: "audio", label: "Audio", colorClass: "audio" },
   { key: "crosswords", label: "Crosswords", colorClass: "crosswords" },
 ];
 
@@ -65,10 +63,10 @@ const ArticleMain = () => {
                     articlesData[key].map((article) => (
                       <Article
                         key={article.id}
-                        article_link={article.url || "#"}
+                        article_link={article.article_link || "#"}
                         image={article.image}
                         title={article.title}
-                        authors={article.author ? [article.author] : []}
+                        authors={article.authors ? [article.authors] : []}
                       />
                     ))
                   ) : (

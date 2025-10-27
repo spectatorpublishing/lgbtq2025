@@ -22,10 +22,9 @@ const Credits = () => {
                         <div className="credits-section" key={section}>
                             <h3 className="section-title">{section.toUpperCase()}</h3>
                             {members.map((person, idx) => (
-                            <p className="personInfo" key={idx}>
-                                {person.staff_name},<br />
-                                {person.title}
-                            </p>
+                                <p className="personInfo" key={idx}>
+                                {person.staff_name}{","}{person.title}
+                                </p>
                             ))}
                         </div>
                         ))}
