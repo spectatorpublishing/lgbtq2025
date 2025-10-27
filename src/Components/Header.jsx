@@ -34,24 +34,28 @@ const CircleSpike = styled.img`
 `;
 
 const IllustrationContainer = styled.div`
-    display: flex;
-    justify-content: right;
-    max-width: 100%;
-    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    min-width: 400px;    
+    max-width: 800px;     
+    padding-right: 80px;
+    padding-top: 20px;
+    top: 20%;
+    right: 80px;    
+    z-index: 50;
+    pointer-events: none;
 `;
 
 const Illo = styled.img`
-    position: absolute;
-    width: 50%;
-    padding-right: 80px;
+    width: 100%;
     height: auto;
-    z-index: 50;
-    top: 20%;
+    display: block;
 `;
 
 
 const TitleLGBTQ = styled.section`
-    position: abolute;
     display: flex;
     justify-content: left;
     align-items: flex-start;
@@ -186,9 +190,6 @@ export default function Header() {
             <Red src={"red_rainbow.png"} alt="Red Rainbow Sticker" />
         </RedWrapper>
     </SectionBottom>
-   
-
     </>
   );
 }
-
