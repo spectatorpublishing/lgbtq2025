@@ -1,5 +1,5 @@
 export const credits = {
-    "CB": [
+    "Corporate Board": [
       { staff_name: "Shea Vance", title: "Editor In Chief" },
       { staff_name: "Albert Tsai", title: "Publisher" },
       { staff_name: "Heather Chen", title: "Managing editor" },
@@ -44,7 +44,7 @@ export const credits = {
       { staff_name: "Andrew Vincenti", title: "Deputy Sports Editor" },
     ],
   
-    "A&C": [
+    "Arts and Culture": [
       { staff_name: "Joyce Zhang", title: "Arts & Culture Editor" },
       { staff_name: "Beatrice Moyers", title: "Deputy Arts & Culture Editor" },
       { staff_name: "Rachel Shaw", title: "Deputy Arts & Culture Editor" },
